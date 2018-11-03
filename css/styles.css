@@ -1,0 +1,419 @@
+
+/*@media screen and (max-width: 415px) { */
+  
+body{
+  margin: 8%;
+  /*position: absolute;*/
+    font-family: 'pincheFuente', Helvetica, Arial, sans-serif;
+    /*font-size: 1.5em;*/
+    font-size: .88em;
+    line-height: 1.5em;
+    color: #4A4A4A;
+    margin-top: 50px;
+}
+section{
+  float: left;  
+    line-height: 1.8em;
+    font-size: 12pt;    
+    margin-top: 0px;
+}
+section p::first-letter {  
+  font-size: 3em;  
+}
+.menu{  
+  width: 100%;
+  float: left;
+  margin-bottom: 2%;
+  margin-top: -50px;
+    padding-top: 20px;
+    position: fixed;
+    background-color: white;
+    /*box-shadow: -30px 26px 5px 5px rgba(0,0,0,0.2),0 6px 60px 2px rgba(0,0,0,0.19) !important;*/
+    margin-left: -30px;
+
+}
+header img{
+    
+    width: 12em;
+    border: none;
+    margin-right: 2em;
+    float: left;
+}
+
+.container {
+    display: inline-block;
+    cursor: pointer; 
+    float: left; 
+    margin-left: 20px; 
+    
+}
+.bar1, .bar2, .bar3 {
+    width: 34px;
+    height: 3px;
+    background-color: #BD10E0;
+    margin: 8px 0;
+    transition: 0.4s;
+}
+.bar3{
+  width: 22px;
+}    
+
+ul{
+  list-style: none;
+  font-size: large;
+  margin-left: 26px;
+  margin-top: 50px;
+  margin-bottom: 3%;
+  /*margin-bottom: 15%;*/
+}
+ul li:first-child{  
+      border-bottom: 1px solid #979797;
+    padding-bottom: 30px;
+}
+ul li{
+      margin-bottom: 14px;
+    padding-bottom: 20px;
+    margin-top: 30px;
+}
+ul li a {
+   text-decoration:  none;
+}
+
+.arrow{
+  border-radius: 0!important;
+    /*width: 4%!important;
+    height: 50px!important;*/
+    border: none!important;
+    background-size: 12px;
+    background-repeat: no-repeat;
+    padding-left: 33px;
+    padding-bottom: 10px;
+    font-size: 16px;
+    background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQFkpXl6n0d5dimLYkvWS1AKEZe-4owcThJM2VGVIN6jpB2FyG_gQ');
+    position: fixed;
+    background-color: #fff;
+    width: 90%;
+    padding-bottom: 10px;
+    background-position-x: 20px;  
+}
+.envolve .acanijo{
+    width: 26px!important;
+    height: 26px!important;
+    float: right;    
+    margin-right: 30px;
+    margin-top: 5px;
+}
+.arrow a {
+  text-decoration:  none;
+}
+.menu .arrow img{
+    width: 26px!important;
+    height: 26px!important;
+    float: right;    
+    margin-right: 60px;
+    margin-top: -6px;
+}
+.title{
+  font-size: 1.8em;
+    /*position: relative;*/
+    bottom: 10px;
+    color: #4A90E2;
+    margin-top: 20px;
+}
+.link{
+    color: #BD10E0;
+    font-size: 1.2em;
+}
+table span{
+      float: right;
+    /*position: relative;
+    bottom: -30px;*/
+    text-decoration: underline;
+    font-size: 14px;
+    margin-top: 40px;
+}
+table .left{
+  float: left;
+}
+table{
+  width: 100%;
+}
+table img{
+  width: 100%;
+  height: 190px;
+}
+
+.envolve h2{
+    float: left;    
+    width: 60%; 
+    margin-bottom:0px;  
+    margin-top: 30px; 
+}
+.work{    
+    width: 60%;
+    float: left;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    font-size: 1.4em;
+}
+
+.envolve img  {
+   float: left;
+    margin-right:5%;
+  width: 70px;    
+    height: 70px;
+    border-radius: 100%;
+   /* margin: 2%;*/
+    margin-top: 20px;
+}
+
+.collage img{
+  margin: auto;    
+    display: block;
+    width: 60%;
+}
+
+@font-face {
+  font-family: "pincheFuente";
+  src:url("../fonts/gothamhtfBook.eot");
+  src:url("../fonts/gothamhtfBook.eot?#iefix") format("embedded-opentype"),
+    url("../fonts/gothamhtfBook.ttf") format("truetype"),
+    url("../fonts/gothamhtfBook.woff") format("woff"),
+    url("../fonts/gothamhtfBook.svg#pincheFuente") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+  /* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content */
+.modal-content {
+  float: left;
+  top: -100px;
+    position: relative;
+    background-color: #fefefe;
+    margin: auto;
+    padding: 0;
+    border: 1px solid #888;
+    width: 100%;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+    -webkit-animation-name: animatetop;
+    -webkit-animation-duration: 0.4s;
+    animation-name: animatetop;
+    animation-duration: 0.4s
+}
+
+/* Add Animation */
+@-webkit-keyframes animatetop {
+    from {top:-300px; opacity:0} 
+    to {top:0; opacity:1}
+}
+
+@keyframes animatetop {
+    from {top:-300px; opacity:0}
+    to {top:0; opacity:1}
+}
+
+/* The Close Button */
+.close {
+    color: white;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.modal-header {
+    padding: 18px 20px;
+    background-color: #BD10E0;
+    color: white;
+    float: right;
+}
+
+.modal-body {padding: 2px 16px;}
+
+@media screen and (max-width: 415px) { 
+#menudesktop{
+   display: none;
+}
+
+}
+
+  
+/*}*/
+
+
+@media screen and (min-width: 415px) { 
+  /*#myModal {
+  visibility: hidden;
+}*/
+.menu {
+  visibility: hidden;
+  display: none;
+}
+section .description {
+    width: 70%;
+    font-size: 18pt!important;
+}
+.collage img{
+    width: 20%;
+}
+#menudesktop {
+  margin-bottom: 2%;
+  border-bottom: 1px solid;
+
+}
+ul {
+  list-style: none;
+    font-size: large;
+    margin-left: 26px;
+    margin-top: 50px;
+
+    border-bottom: 1px solid #4A4A4A;
+}
+/*#menudesktop  ul li {
+    margin-bottom: 14px;    
+    padding-bottom: none;
+    width: 12%;
+    float: left;
+}*/
+ul li:first-child {
+  border-bottom: none;
+  float: left;
+  width: 120px;
+  }
+ul li{
+  border-bottom: none;  
+  margin-top: 0px;
+}
+
+
+table tr td {
+    width: 22%;
+    float: left;
+
+} 
+table tr td img{
+      width: 70%;
+    height: auto;
+}
+/*#myModal {
+  visibility: visible;
+}*/
+  }
+
+
+.contCenter{
+    margin: 0;
+    text-align: center;
+    height: inherit;
+      width: 100%;
+}
+
+@media (max-width: 1024){
+  .contCenter img{
+  /*width: 80%;*/
+  width: calc(100% - 80%);
+}
+
+.contCenter .modal-body{
+      padding: 30px 16px;
+}
+
+}
+
+#myModalb .contCenter img{
+    width: calc(80% - 20%);
+  }
+
+
+
+
+
+
+
+
+.tabcontent {
+    background: #fff;
+    /*display: none;*/
+    height: 500px;
+    position: relative;
+    width: 100%;
+}
+.tabcontent .product {
+    border: 1px solid #dedede;
+    cursor: pointer;
+    display: block;
+    float: left;
+    font-size: 12px;
+    height: 320px;
+    margin: -1px -1px 0 0;
+    position: relative;
+    text-align: center;
+    text-transform: uppercase;
+    width: 33.33%;
+}
+
+.tabcontent .product .counter {
+    border: 1px solid #ddd;
+    border-radius: 24px;
+    color: #000;
+    display: none;
+    height: 30px;
+    line-height: 31px;
+    position: absolute;
+    right: 40px;
+    top: 40px;
+    width: 30px;
+}
+
+.contents {
+    display: block;
+    left: 210px;
+    padding-top: 60px;
+    position: relative;
+    width: calc(100% - 210px);
+}
+
+.contents {
+        left: 0;
+        width: 100%;
+    }
+
+
+
+@media only screen and (min-width:321px) and (max-width:480px){
+    .tabcontent .product {
+        width: 100%;
+    }
+}@media only screen and (min-width:481px) and (max-width:768px){
+    
+    .tabcontent .product {
+        width: 50%;
+    }
+}
+
+@media only screen and (min-width:769px) and (max-width:1024px){
+    .tabcontent .product {
+        width: 50%;
+    }
+}
